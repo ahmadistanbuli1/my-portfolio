@@ -1,0 +1,173 @@
+import type { IconType } from 'react-icons'
+import {
+  SiDocker,
+  SiExpress,
+  SiFigma,
+  SiFramer,
+  SiGit,
+  SiGraphql,
+  SiHtml5,
+  SiJavascript,
+  SiMongodb,
+  SiNestjs,
+  SiNextdotjs,
+  SiNodedotjs,
+  SiPostgresql,
+  SiPrisma,
+  SiReact,
+  SiRedux,
+  SiTailwindcss,
+  SiTypescript,
+  SiVite,
+} from 'react-icons/si'
+import { TbBrandVscode } from 'react-icons/tb'
+
+export const TECH_COLORS: Record<string, string> = {
+  React: '#61DAFB',
+  TypeScript: '#3178C6',
+  'Tailwind CSS': '#06B6D4',
+  Vite: '#646CFF',
+  'Redux Toolkit': '#764ABC',
+  Redux: '#764ABC',
+  'Node.js': '#339933',
+  Express: '#000000',
+  'Nest.js': '#E0234E',
+  PostgreSQL: '#4169E1',
+  MongoDB: '#47A248',
+  Prisma: '#2D3748',
+  Git: '#F05032',
+  Docker: '#2496ED',
+  GraphQL: '#E10098',
+  'Next.js': '#000000',
+  Next: '#000000',
+}
+
+export const TECH_ICON_MAP: Record<string, IconType> = {
+  React: SiReact,
+  TypeScript: SiTypescript,
+  'Tailwind CSS': SiTailwindcss,
+  Vite: SiVite,
+  'HTML/CSS': SiHtml5,
+  'Redux Toolkit': SiRedux,
+  Redux: SiRedux,
+  'Framer Motion': SiFramer,
+  'Node.js': SiNodedotjs,
+  Express: SiExpress,
+  'REST APIs': SiJavascript,
+  'Nest.js': SiNestjs,
+  NestJS: SiNestjs,
+  GraphQL: SiGraphql,
+  PostgreSQL: SiPostgresql,
+  MongoDB: SiMongodb,
+  Prisma: SiPrisma,
+  SQL: SiPostgresql,
+  Git: SiGit,
+  Docker: SiDocker,
+  Figma: SiFigma,
+  'VS Code': TbBrandVscode,
+  Next: SiNextdotjs,
+  'Next.js': SiNextdotjs,
+}
+
+export interface HeroFloatingTech {
+  id: string
+  name: string
+  icon: IconType
+  size: number
+  top: string
+  left: string
+  duration: number
+  delay: number
+  color: string
+}
+
+export const HERO_FLOATING_TECH: HeroFloatingTech[] = [
+  {
+    id: 'react',
+    name: 'React',
+    icon: SiReact,
+    size: 36,
+    top: '12%',
+    left: '58%',
+    duration: 7,
+    delay: 0,
+    color: '#61DAFB',
+  },
+  {
+    id: 'nestjs',
+    name: 'NestJS',
+    icon: SiNestjs,
+    size: 28,
+    top: '8%',
+    left: '78%',
+    duration: 8,
+    delay: 0.5,
+    color: '#E0234E',
+  },
+  {
+    id: 'node',
+    name: 'Node.js',
+    icon: SiNodedotjs,
+    size: 32,
+    top: '38%',
+    left: '52%',
+    duration: 6,
+    delay: 1,
+    color: '#339933',
+  },
+  {
+    id: 'next',
+    name: 'Next.js',
+    icon: SiNextdotjs,
+    size: 30,
+    top: '32%',
+    left: '82%',
+    duration: 9,
+    delay: 0.3,
+    color: 'var(--text-primary)',
+  },
+  {
+    id: 'express',
+    name: 'Express',
+    icon: SiExpress,
+    size: 24,
+    top: '62%',
+    left: '60%',
+    duration: 7.5,
+    delay: 0.8,
+    color: 'var(--text-primary)',
+  },
+  {
+    id: 'postgresql',
+    name: 'PostgreSQL',
+    icon: SiPostgresql,
+    size: 28,
+    top: '55%',
+    left: '78%',
+    duration: 8.5,
+    delay: 1.2,
+    color: '#4169E1',
+  },
+  {
+    id: 'prisma',
+    name: 'Prisma',
+    icon: SiPrisma,
+    size: 26,
+    top: '72%',
+    left: '68%',
+    duration: 6.5,
+    delay: 0.6,
+    color: '#2D3748',
+  },
+  {
+    id: 'redux',
+    name: 'Redux',
+    icon: SiRedux,
+    size: 24,
+    top: '20%',
+    left: '68%',
+    duration: 7.2,
+    delay: 1.5,
+    color: '#764ABC',
+  },
+]

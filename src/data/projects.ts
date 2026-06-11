@@ -1,48 +1,61 @@
-import type { Project } from '../types'
+import type { Project } from "../types";
 
 export const projects: Project[] = [
   {
-    id: 'project-1',
-    title: 'University Management System',
+    id: "project-1",
+    title: "University Management System",
     description:
-      'A full-stack platform for course registration, grading, and student analytics — built for a large-scale university deployment.',
-    image: '/images/projects/university-system.jpg',
-    technologies: ['React', 'TypeScript', 'Node.js', 'PostgreSQL'],
-    githubUrl: 'https://github.com/yourusername/university-system',
-    liveUrl: 'https://example.com/university-system',
+      "A full-stack platform for course registration, grading, and student analytics — built for a large-scale university deployment.",
+    image: "/images/projects/university-system.jpg",
+    technologies: ["React", "TypeScript", "Node.js", "PostgreSQL"],
+    githubUrl: "https://github.com/yourusername/university-system",
+    liveUrl: "https://example.com/university-system",
     featured: true,
   },
   {
-    id: 'project-2',
-    title: 'E-Commerce Dashboard',
+    id: "project-2",
+    title: "E-Commerce App",
     description:
-      'Real-time analytics dashboard with glassmorphism UI, role-based access, and optimized data visualization.',
-    image: '/images/projects/ecommerce-dashboard.jpg',
-    technologies: ['React', 'Tailwind CSS', 'Chart.js', 'REST API'],
-    githubUrl: 'https://github.com/yourusername/ecommerce-dashboard',
+      "A modern e-commerce application with product browsing, shopping cart, and secure checkout — built for a mid-sized online retailer.",
+    image: "./images/ecommerce.png",
+    technologies: [
+      "React",
+      "Tailwind CSS",
+      "expressJs",
+      "PostgreSQL",
+      "Prisma",
+    ],
+    githubUrl: "https://github.com/ahmadistanbuli1/E-commerce-website",
+    liveUrl: "https://e-commerce-website-sigma-lake.vercel.app/",
     featured: true,
   },
   {
-    id: 'project-3',
-    title: 'Task Collaboration App',
+    id: "project-3",
+    title: "Simulation Challenges",
     description:
-      'Kanban-style project management tool with drag-and-drop, team workspaces, and offline-first architecture.',
-    image: '/images/projects/task-app.jpg',
-    technologies: ['React', 'TypeScript', 'Framer Motion'],
-    githubUrl: 'https://github.com/yourusername/task-app',
-    liveUrl: 'https://example.com/task-app',
+      "A Collection Of Quizzes And Solve Problems In Computer Science,To Test Your Problem-Solving Skills.",
+    image: "./images/simulation-challenges.png",
+    technologies: [
+      "React",
+      "TypeScript",
+      "Framer Motion",
+      "prisma",
+      "PostgreSQL",
+    ],
+    githubUrl: "https://github.com/ahmadistanbuli1/simunlation-challenges",
+    liveUrl: "",
     featured: true,
   },
   {
-    id: 'project-4',
-    title: 'Weather Forecast CLI',
+    id: "project-4",
+    title: "Weather Forecast CLI",
     description:
-      'Command-line weather tool with geolocation support, caching layer, and clean modular architecture.',
-    image: '/images/projects/weather-cli.jpg',
-    technologies: ['Python', 'Typer', 'Redis', 'OpenWeather API'],
-    githubUrl: 'https://github.com/yourusername/weather-cli',
+      "Command-line weather tool with geolocation support, caching layer, and clean modular architecture.",
+    image: "/images/projects/weather-cli.jpg",
+    technologies: ["Python", "Typer", "Redis", "OpenWeather API"],
+    githubUrl: "https://github.com/yourusername/weather-cli",
     featured: false,
   },
-]
+];
 
-export const featuredProjects = projects.filter((p) => p.featured)
+export const featuredProjects = projects.filter((p) => p.featured);
